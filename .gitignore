@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.env/
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Sistema Windows - arquivos temporários e lixo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Sistema Linux - arquivos temporários e lixo
+*~
+*.swp
+.cache/
+.local/
+
+# Logs e arquivos temporários do Django
+*.log
+*.pot
+*.pyc
+
+# Arquivos de cobertura de testes
+.coverage
+htmlcov/
+
+# Pipenv
+Pipfile.lock
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+
+# Django migrations pyc (não precisa, mas opcional para ignorar)
+**/migrations/*.py[cod]
+
+# Outros arquivos temporários ou que podem ser gerados
+*.bak
+*.tmp
