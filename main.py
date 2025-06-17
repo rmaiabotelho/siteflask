@@ -3,6 +3,8 @@ from flask import Flask, render_template
 # Serve para iniciar o flask
 app = Flask(__name__)
 
+lista_usuarios = ['Rodrigo', 'Ruan', 'Cintia', 'Delmar', 'Marcos']
+
 # Rota para estipular em qual link a página estará disponível
 @app.route("/")
 # Função para regular o funcionamento da página, o que será exibido e como
@@ -12,6 +14,10 @@ def home():
 @app.route('/contato')
 def contato():
     return render_template('contato.html')
+
+@app.route('/usuarios')
+def usuarios():
+    return render_template('usuarios.html', lista_usuarios=lista_usuarios)
 
 # Para rodar a página somente pelo arquivo e não por importação
 if __name__ == "__main__":
