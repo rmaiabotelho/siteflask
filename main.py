@@ -1,4 +1,9 @@
-from flask import Flask, render_template
+'''
+* url_for * server para padronizar as urls das páginas, caso precise ser alteradas e
+continuar funcionando, pois ao mensionar uma url, devemos usar {{ url_for('nome_da_funcao')}}
+'''
+
+from flask import Flask, render_template, url_for
 
 # Serve para iniciar o flask
 app = Flask(__name__)
